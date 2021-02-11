@@ -139,4 +139,5 @@ const watchForChanges = () => {
 exports.default = series(parallel(css, js, copyImages, copyFonts, html, copyFavicon), watchForChanges);
 exports.build = series(parallel(css, js, copyImages, copyFonts, html, copyFavicon));
 exports.sprite = series(svgStore);
+exports.images = series(copyImages);
 exports.webpTask = series(webpTask);

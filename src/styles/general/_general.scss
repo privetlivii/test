@@ -1,13 +1,5 @@
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
   src: url('../fonts/Lato-Heavy.woff') format('woff');
   font-weight: 900;
   font-style: normal;
@@ -16,8 +8,8 @@
 
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato-Regular.woff') format('woff');
-  font-weight: 400;
+  src: url('../fonts/Lato-Bold.woff') format('woff');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -26,6 +18,14 @@
   font-family: 'Lato';
   src: url('../fonts/Lato-Semibold.woff') format('woff');
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.woff') format('woff');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -52,4 +52,34 @@ body {
   padding-right: $gutter;
 }
 
+.btn {
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 5px;
+  width: 180px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  text-transform: uppercase;
+  transition: background .9s ease-in-out, box-shadow .9s ease-in-out, color .9s ease-in-out;
 
+  &:hover {
+    background: #dcc512;
+    box-shadow: 0 0 25px 1px rgba(37, 38, 50, 0.59);
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background: #3e9cdc;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #2a2b30;
+  &:hover{
+    color: #fff;
+  }
+}

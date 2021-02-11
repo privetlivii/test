@@ -21,11 +21,12 @@
 <body>
 <header class="header">
     <div class="container header-container">
-        <div class="header-logo"><a href="#" class="header-logo__link"><img src="img/logo.png" alt="logo"
-                                                                            class="header-logo__image"></a></div>
+        <div class="header-logo">
+            <a href="#" class="header-logo__link">
+                <img src="img/logo.svg" alt="logo" class="header-logo__image"></a>
+        </div>
         <nav class="nav">
             <div class="nav-menu__toggle"></div>
-
             <ul class="nav-menu">
                 <li class="nav-menu__items"><a href="#" class="nav-menu__links active">Бизнес</a></li>
                 <li class="nav-menu__items"><a href="#" class="nav-menu__links">О нас</a></li>
@@ -37,24 +38,42 @@
 </header>
 <section class="order">
     <div class="container order-container">
-<h1 class="order-title">
-    <span>Lorem ipsum</span> dolor sit amet
-    consectetur <span>adipiscing</span>
-</h1>
+        <h1 class="order-title">
+            <span>Lorem ipsum</span> dolor sit amet
+            consectetur <span>adipiscing</span>
+        </h1>
         <ul class="order-content">
             <li class="order-content__items">At vero eos et accusamus et iusto odio dignissimos ducimus!
-                </li>
+            </li>
             <li class="order-content__items">- Totam rem aperiam eaque ipsa
-                </li>
+            </li>
             <li class="order-content__items">- Sit voluptatem accusantium doloremque laudantium
-                </li>
+            </li>
             <li class="order-content__items">- Sed ut perspiciatis, unde omnis iste natus error</li>
         </ul>
-<div class="order-"
+        <div class="order-block">
+            <a href="#" class="order-block__links btn-primary btn">Заказать</a>
+            <a href="#" class="order-block__links btn-secondary btn">Подробнее</a>
+        </div>
 
     </div>
 </section>
+<main class="main">
+    <div class="container main-container">
+        <h2 class="main-title">Оформление <span>Заказа</span></h2>
+        <div class="main-subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</div>
+        <div class="main-progression">
+            <div class="main-progression__box">
+                <svg class="main-progression__box-icon">
+                    <use xlink:href="img/spriteicons.svg#icon-login"></use>
+                </svg>
 
+            </div>
+            <div class="main-progression__dots"></div>
+
+        </div>
+    </div>
+</main>
 
 <!-- Begin Scripts -->
 <script src="js/script.js"></script>

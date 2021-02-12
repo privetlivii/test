@@ -27,7 +27,5 @@ window.addEventListener("DOMContentLoaded", function () {
     });
     /* END: Menu toggle */
 
-
-
-
 });
+

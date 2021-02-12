@@ -1,6 +1,6 @@
 .main {
   background: url("../img/main-bg.jpg") no-repeat top center;
-  height: 800px;
+  height: 880px;
 }
 
 .main-title {
@@ -8,7 +8,7 @@
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 900;
-  padding-top: 125px;
+  padding-top: 112px;
 
   span {
     color: #3e9cdc;
@@ -19,21 +19,98 @@
   text-align: center;
   color: #bbbbbb;
   font-size: 18px;
+  padding-bottom: 80px;
+}
 
+.main-progression {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.main-progression__box {
+  width: 166px;
+  position: relative;
+}
+
+.main-progression__box-dots {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  left: -85px;
+
+  span {
+    background: #bbbbbb;
+    width: 7px;
+    height: 7px;
+    margin-right: 13px;
+    border-radius: 50px;
+  }
+}
+
+.main-progression__box-text {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main-progression__box-icon {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  margin-top: 28px;
+  margin-left: 28px;
+
+}
+
+.main-progression__box-inner {
+  width: 105px;
+  height: 105px;
+  background: #3e9cdc;
+  border-radius: 50px;
+  border: 5px solid #286690;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.main-form {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.main-form__inner {
+  width: 33.3333%;
+  flex: 0 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
 
+.main-form__select, .main-form__email, .main-form__name {
+  background: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #272733;
+  font-size: 18px;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  outline: none;
 
-
-
-
-
-
-
-
-
-
+  &::after {
+    content: "";
+    border-left: 2px solid #2a2b30;
+    border-bottom: 2px solid #2a2b30;
+    width: 9px;
+    height: 9px;
+    margin-left: auto;
+    transform: rotate(-45deg);
+  }
+}
 
 
 

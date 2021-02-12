@@ -3,7 +3,8 @@
 }
 
 .order-container {
-  padding-top: 240px;
+  padding-top: 227px;
+  line-height: 68px;
 }
 
 .order-title {
@@ -12,7 +13,7 @@
   color: #272733;
   width: 740px;
   text-transform: uppercase;
-  margin-bottom: 75px;
+  margin-bottom: 30px;
 
   span {
     color: #3e9cdc;
@@ -29,7 +30,7 @@
   color: #272733;
   font-size: 20px;
   font-weight: 400;
-
+  height: 35px;
   &:first-child {
     color: #2a2b30;
     font-weight: 700;
@@ -38,8 +39,8 @@
 
 .order-block {
   display: flex;
-  padding-top: 55px;
-  padding-bottom: 177px;
+  padding-top: 87px;
+  padding-bottom: 190px;
 }
 
 

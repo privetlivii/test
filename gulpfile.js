@@ -136,7 +136,7 @@ const watchForChanges = () => {
 }
 
 // public tasks
-exports.default = series(parallel(css, js, copyImages, copyFonts, html, copyFavicon), watchForChanges);
+exports.default = series(parallel(css, js, copyImages, copyFonts, html, copyFavicon, svgStore), watchForChanges);
 exports.build = series(parallel(css, js, copyImages, copyFonts, html, copyFavicon));
 exports.sprite = series(svgStore);
 exports.images = series(copyImages);

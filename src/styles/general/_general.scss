@@ -39,7 +39,7 @@ body {
   color: #fff;
   font-size: 14px;
   font-weight: normal;
-  background-color: #ffffff;
+  background-color: #fff;
 
 }
 
@@ -66,20 +66,43 @@ body {
   transition: background .9s ease-in-out, box-shadow .9s ease-in-out, color .9s ease-in-out;
 
   &:hover {
-    background: #dcc512;
+    background-color: #dcc512;
     box-shadow: 0 0 25px 1px rgba(37, 38, 50, 0.59);
   }
 }
 
 .btn-primary {
   color: #fff;
-  background: #3e9cdc;
+  background-color: #3e9cdc;
 }
 
 .btn-secondary {
-  background: #fff;
+  background-color: #fff;
   color: #2a2b30;
-  &:hover{
+
+  &:hover {
     color: #fff;
+  }
+}
+
+.hide-placeholder {
+  @include hidePlaceholder {
+    opacity: 1;
+    color: #272733;
+    font-size: 15px;
+    transition: opacity 0.3s ease;
+  }
+
+  &:focus {
+    @include hidePlaceholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
   }
 }

@@ -1,6 +1,10 @@
 /* BEGIN general styles */
 @import "lib/bootstrap-reboot";
+@import "lib/select2";
+@import "lib/jquery-ui";
+@import "lib/jquery-ui.theme";
 @import "general/vars";
+@import "general/mixins";
 @import "general/general";
 
 /* BEGIN blocks styles */

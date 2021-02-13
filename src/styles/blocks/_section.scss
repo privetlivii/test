@@ -31,6 +31,7 @@
   font-size: 20px;
   font-weight: 400;
   height: 35px;
+
   &:first-child {
     color: #2a2b30;
     font-weight: 700;
@@ -70,45 +71,26 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
+  .order-container {
+    line-height: unset;
+  }
   .order {
-    background-size: 192vw;
+    background-size: 218vw;
   }
   .order-block__links:nth-child(2) {
     margin-left: 0;
     margin-top: 2vw;
   }
   .order-block {
-    padding-bottom: 23vw;
     flex-direction: column;
     width: 48vw;
+    padding-bottom: 4vw;
   }
-}
 
-@media (max-width: 768px) {
-  .order-block {
-    padding-bottom: 15vw;
-  }
   .order-content__items {
     font-size: 2.2vw;
-  }
-  .nav-menu__items {
-    padding-right: 0;
-    text-align: center;
-    padding-top: 3px;
-    padding-bottom: 3px;
-
-    &:last-child {
-      padding-left: 0;
-    }
-  }
-  .nav-menu {
-    top: 70px;
-    width: 180px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .nav-menu__links.active {
-    color: #c5dc3e;
+    height: 5vw;
   }
 }
 

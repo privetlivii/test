@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.min.css?ver=1.3">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -69,18 +69,12 @@
                         <use xlink:href="img/spriteicons.svg#search"></use>
                     </svg>
                 </div>
-                <div class="main-progression__box-text">Lorem ipsum dolor<br>
-                    sit amet
+                <div class="main-progression__box-text">
+                    Lorem ipsum dolor<br>
+                    sit&nbsp;amet
                 </div>
             </div>
             <div class="main-progression__box">
-                <div class="main-progression__box-dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
                 <div class="main-progression__box-inner">
                     <svg class="main-progression__box-icon">
                         <use xlink:href="img/spriteicons.svg#percent"></use>
@@ -89,13 +83,6 @@
                 <div class="main-progression__box-text">Сonsecteturadipiscing elit</div>
             </div>
             <div class="main-progression__box">
-                <div class="main-progression__box-dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
                 <div class="main-progression__box-inner">
                     <svg class="main-progression__box-icon">
                         <use xlink:href="img/spriteicons.svg#file-plus"></use>
@@ -104,30 +91,16 @@
                 <div class="main-progression__box-text">Sed do eiusmod tempor</div>
             </div>
             <div class="main-progression__box">
-                <div class="main-progression__box-dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
                 <div class="main-progression__box-inner">
                     <svg class="main-progression__box-icon">
                         <use xlink:href="img/spriteicons.svg#envelope"></use>
                     </svg>
                 </div>
-                <div class="main-progression__box-text">Esse cillum dolore <br>
-                    eu fugiat
+                <div class="main-progression__box-text">
+                    Esse cillum dolore eu&nbsp;fugiat
                 </div>
             </div>
             <div class="main-progression__box">
-                <div class="main-progression__box-dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
                 <div class="main-progression__box-inner">
                     <svg class="main-progression__box-icon">
                         <use xlink:href="img/spriteicons.svg#money-bill-alt"></use>
@@ -147,20 +120,49 @@
                     <option value="" class="main-form__select-items">Itaque earum rerum</option>
                     <option value="" class="main-form__select-items">Sed ut perspiciatis</option>
                     <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
+                    <option value="" class="main-form__select-items">Nemo enim ipsam</option>
                 </select>
             </div>
 
             <div class="main-form__inner">
-                <input type="text" placeholder="Ваш e-mail" class="main-form__email" required>
+                <input type="text" placeholder="Ваш e-mail" class="main-form__email hide-placeholder" required>
             </div>
             <div class="main-form__inner">
-                <input type="text" placeholder="Ваше имя" class="main-form__name" required>
+                <input type="text" placeholder="Ваше имя" class="main-form__name hide-placeholder" required>
             </div>
-            <!--            <button class="search-form__button">-->
-            <!--                <svg class="search-form__button-icon">-->
-            <!--                    <use xlink:href="img/spriteicons.svg#icon-search"></use>-->
-            <!--                </svg>-->
-            <!--            </button>-->
+            <div class="main-form__track">
+                <div class="main-form__track-block" id="amount" data-amount>
+                    <div class="main-form__track-text"> Sed ut perspiciatis, unde omnis iste natus</div>
+                </div>
+                <div id="slider-vertical"></div>
+            </div>
+            <div class="main-form__file">
+                <label for="myfile" class="main-form__file-text">
+                    <svg class="main-form__file-icon">
+                        <use xlink:href="img/spriteicons.svg#file"></use>
+                    </svg>
+                    Прикрепить файл</label>
+                <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+            </div>
+            <button class="main-form__button">
+                Отправить
+            </button>
         </form>
     </div>
 </main>
@@ -173,39 +175,35 @@
                 <svg class="footer-icon">
                     <use xlink:href="img/spriteicons.svg#qiwi"></use>
                 </svg>
-                Qiwi wallet
+                Qiwi&nbsp;wallet
             </a>
             <a href="#" class="footer-payments__icon-links footer-link">
                 <svg class="footer-icon">
                     <use xlink:href="img/spriteicons.svg#yandex"></use>
                 </svg>
-                Yandex Money
+                Yandex&nbsp;Money
             </a>
             <a href="#" class="footer-payments__icon-links footer-link">
                 <svg class="footer-icon">
                     <use xlink:href="img/spriteicons.svg#webmoney"></use>
                 </svg>
-                Web Money
+                Web&nbsp;Money
             </a>
         </div>
-<div class="footer-social">
-    <a href="#" class="footer-social__icon-links footer-link">
-        <svg class="footer-icon">
-            <use xlink:href="img/spriteicons.svg#mail"></use>
-        </svg>
-        info@ipsum228.com
-    </a>
-    <a href="#" class="footer-social__icon-links footer-link">
-        <svg class="footer-icon">
-            <use xlink:href="img/spriteicons.svg#vk"></use>
-        </svg>
-        Мы вконтакте
-    </a>
-
-</div>
-
-
-
+        <div class="footer-social">
+            <a href="#" class="footer-social__icon-links footer-link">
+                <svg class="footer-icon">
+                    <use xlink:href="img/spriteicons.svg#mail"></use>
+                </svg>
+                info@ipsum228.com
+            </a>
+            <a href="#" class="footer-social__icon-links footer-link">
+                <svg class="footer-icon">
+                    <use xlink:href="img/spriteicons.svg#vk"></use>
+                </svg>
+                Мы вконтакте
+            </a>
+        </div>
     </div>
 </footer>
 

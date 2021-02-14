@@ -36,6 +36,7 @@ const css = () => {
 const js = () => {
     return src('./src/js/script.js')
         .pipe(rigger())
+        .pipe(uglify())
         .pipe(dest('./build/js'))
         .pipe(mode.development(browserSync.stream()));
 }

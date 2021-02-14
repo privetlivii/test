@@ -2,12 +2,13 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Я тест!</title>
+    <title>тест</title>
     <meta name="description" content="">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/styles.min.css?ver=1.3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css?ver=1.1">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -23,45 +24,57 @@
     <div class="container header-container">
         <div class="header-logo">
             <a href="#" class="header-logo__link">
-                <img src="img/logo.svg" alt="logo" class="header-logo__image"></a>
+                <img src="img/logo.svg" alt="logo" class="header-logo__image">
+            </a>
         </div>
         <nav class="nav">
-            <div class="nav-menu__toggle"></div>
-            <ul class="nav-menu">
-                <li class="nav-menu__items"><a href="#" class="nav-menu__links active">Бизнес</a></li>
-                <li class="nav-menu__items"><a href="#" class="nav-menu__links">О нас</a></li>
-                <li class="nav-menu__items"><a href="#" class="nav-menu__links">Цены</a></li>
-                <li class="nav-menu__items"><a href="#" class="nav-menu__links">Оформить заказ</a></li>
+            <div class="menu-toggle"></div>
+            <ul class="menu">
+                <li class="menu-item"><a href="#" class="menu-link active">Бизнес</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">О нас</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Цены</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Оформить заказ</a></li>
             </ul>
         </nav>
     </div>
 </header>
+
 <section class="order">
     <div class="container order-container">
         <h1 class="order-title">
-            <span>Lorem ipsum</span> dolor sit amet
-            consectetur <span>adipiscing</span>
+            <span>Lorem ipsum</span> dolor sit amet consectetur <span>adipiscing</span>
         </h1>
+
         <ul class="order-content">
-            <li class="order-content__items">At vero eos et accusamus et iusto odio dignissimos ducimus!
+            <li class="order-content__items">
+                At vero eos et accusamus et iusto odio dignissimos ducimus!
             </li>
-            <li class="order-content__items">- Totam rem aperiam eaque ipsa
+            <li class="order-content__items">
+                - Totam rem aperiam eaque ipsa
             </li>
-            <li class="order-content__items">- Sit voluptatem accusantium doloremque laudantium
+            <li class="order-content__items">
+                - Sit voluptatem accusantium doloremque laudantium
             </li>
-            <li class="order-content__items">- Sed ut perspiciatis, unde omnis iste natus error</li>
+            <li class="order-content__items">
+                - Sed ut perspiciatis, unde omnis iste natus error
+            </li>
         </ul>
+
         <div class="order-block">
-            <a href="#" class="order-block__links btn-primary btn">Заказать</a>
+            <a href="#choice" class="order-block__links btn-primary btn js__go">Заказать</a>
             <a href="#" class="order-block__links btn-secondary btn">Подробнее</a>
         </div>
-
     </div>
 </section>
+
 <main class="main">
     <div class="container main-container">
-        <h2 class="main-title">Оформление <span>Заказа</span></h2>
+        <h2 class="main-title" id="choice">
+            Оформление <span>Заказа</span>
+        </h2>
+
         <div class="main-subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</div>
+
         <div class="main-progression">
             <div class="main-progression__box">
                 <div class="main-progression__box-inner">
@@ -74,6 +87,7 @@
                     sit&nbsp;amet
                 </div>
             </div>
+
             <div class="main-progression__box">
                 <div class="main-progression__box-inner">
                     <svg class="main-progression__box-icon">
@@ -82,6 +96,7 @@
                 </div>
                 <div class="main-progression__box-text">Сonsecteturadipiscing elit</div>
             </div>
+
             <div class="main-progression__box">
                 <div class="main-progression__box-inner">
                     <svg class="main-progression__box-icon">
@@ -90,6 +105,7 @@
                 </div>
                 <div class="main-progression__box-text">Sed do eiusmod tempor</div>
             </div>
+
             <div class="main-progression__box">
                 <div class="main-progression__box-inner">
                     <svg class="main-progression__box-icon">
@@ -100,6 +116,7 @@
                     Esse cillum dolore eu&nbsp;fugiat
                 </div>
             </div>
+
             <div class="main-progression__box">
                 <div class="main-progression__box-inner">
                     <svg class="main-progression__box-icon">
@@ -109,9 +126,11 @@
                 <div class="main-progression__box-text">Excepteur sint occaecat<br> cupidatat non proident</div>
             </div>
         </div>
+
         <form class="main-form">
             <div class="main-form__inner">
-                <select name="" id="" class="main-form__select">
+                <label for="select" class="sr-only">Выберите тип системы</label>
+                <select class="main-form__select" id="select">
                     <option value="" class="main-form__select-items">Выберите тип системы</option>
                     <option value="" class="main-form__select-items">Sed ut perspiciatis</option>
                     <option value="" class="main-form__select-items">Nemo enim ipsam</option>
@@ -141,63 +160,76 @@
             </div>
 
             <div class="main-form__inner">
-                <input type="text" placeholder="Ваш e-mail" class="main-form__email hide-placeholder" required>
+                <label for="email" class="sr-only">Ваш e-mail</label>
+                <input type="text" class="main-form__email hide-placeholder" id="email" placeholder="Ваш e-mail" required>
             </div>
+
             <div class="main-form__inner">
-                <input type="text" placeholder="Ваше имя" class="main-form__name hide-placeholder" required>
+                <label for="name" class="sr-only">Ваше имя</label>
+                <input type="text" class="main-form__name hide-placeholder" id="name" placeholder="Ваше имя" required>
             </div>
+
             <div class="main-form__track">
                 <div class="main-form__track-block" id="amount" data-amount>
                     <div class="main-form__track-text"> Sed ut perspiciatis, unde omnis iste natus</div>
                 </div>
-                <div id="slider-vertical"></div>
+
+                <div id="slider"></div>
             </div>
+
             <div class="main-form__file">
-                <label for="myfile" class="main-form__file-text">
+                <label for="myFile" class="main-form__file-text">
                     <svg class="main-form__file-icon">
                         <use xlink:href="img/spriteicons.svg#file"></use>
                     </svg>
                     Прикрепить файл</label>
-                <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+                <input type="file" class="my" id="myFile" name="myFile" multiple="multiple">
             </div>
-            <button class="main-form__button">
-                Отправить
-            </button>
+
+            <div class="main-form__send">
+                <button class="main-form__button">
+                    Отправить
+                </button>
+            </div>
         </form>
     </div>
 </main>
 
 <footer class="footer">
     <div class="container footer-container">
-        <div class="footer-logo">© 2018 <span>«LoremIpsum.net» Все</span> права защищены.</div>
+        <div class="footer-logo">
+            © 2018 <span class="footer-logo__text">«LoremIpsum.net» Все</span> права защищены.
+        </div>
+
         <div class="footer-payments">
-            <a href="#" class="footer-payments__icon-links footer-link">
+            <a href="#" class="footer-payments__link footer-link">
                 <svg class="footer-icon">
                     <use xlink:href="img/spriteicons.svg#qiwi"></use>
                 </svg>
                 Qiwi&nbsp;wallet
             </a>
-            <a href="#" class="footer-payments__icon-links footer-link">
+            <a href="#" class="footer-payments__link footer-link">
                 <svg class="footer-icon">
                     <use xlink:href="img/spriteicons.svg#yandex"></use>
                 </svg>
                 Yandex&nbsp;Money
             </a>
-            <a href="#" class="footer-payments__icon-links footer-link">
+            <a href="#" class="footer-payments__link footer-link">
                 <svg class="footer-icon">
                     <use xlink:href="img/spriteicons.svg#webmoney"></use>
                 </svg>
                 Web&nbsp;Money
             </a>
         </div>
+
         <div class="footer-social">
-            <a href="#" class="footer-social__icon-links footer-link">
+            <a href="#" class="footer-social__link footer-link">
                 <svg class="footer-icon">
                     <use xlink:href="img/spriteicons.svg#mail"></use>
                 </svg>
                 info@ipsum228.com
             </a>
-            <a href="#" class="footer-social__icon-links footer-link">
+            <a href="#" class="footer-social__link footer-link">
                 <svg class="footer-icon">
                     <use xlink:href="img/spriteicons.svg#vk"></use>
                 </svg>
@@ -208,8 +240,7 @@
 </footer>
 
 <!-- Begin Scripts -->
-<script src="js/script.js"></script>
+<script src="js/script.js?ver=1.4"></script>
 <!-- End Scripts -->
 </body>
 </html>
-

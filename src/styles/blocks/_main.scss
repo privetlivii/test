@@ -1,6 +1,6 @@
 .main {
   padding-bottom: 140px;
-  background: url("../img/main-bg.jpg") no-repeat top center #272733;
+  background: url("../img/main-bg.jpg") no-repeat top center #232230;
 }
 
 .main-title {
@@ -141,7 +141,7 @@
 
 .main-form__button {
   background-color: #3e9cdc;
-  margin: 40px auto 0;
+  margin-top: 40px;
   padding-top: 10px;
   padding-bottom: 13px;
   font-size: 15px;
@@ -155,6 +155,38 @@
     background-color: #fff;
     border-color: #3e9cdc;
     color: #3e9cdc;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-progression__box {
+    position: relative;
+
+    &:not(:first-child)::before {
+      position: absolute;
+      top: 50px;
+      left: -85px;
+      background-color: #bbb;
+      width: 7px;
+      height: 7px;
+      margin-right: 13px;
+      border-radius: 50px;
+      content: '';
+      box-shadow: 20px 0 0 #bbb, 40px 0 0 #bbb, 60px 0 0 #bbb, 80px 0 0 #bbb;
+    }
+  }
+  .main-progression__box-inner {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .main-form__send {
+    width: 100%;
+    text-align: center;
+  }
+  .main-form__button {
+    width: 370px;
   }
 }
 
@@ -179,42 +211,12 @@
     padding-right: 15px;
   }
   .main-form__file {
-    width: 32%;
-    padding-top: 32px;
+    width: 33.33333%;
+    padding: 32px 15px 0;
   }
-  .main-form__button {
-    width: 370px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .main-progression__box {
-    position: relative;
-
-    &:not(:first-child)::before {
-      position: absolute;
-      top: 50px;
-      left: -85px;
-      background-color: #bbb;
-      width: 7px;
-      height: 7px;
-      margin-right: 13px;
-      border-radius: 50px;
-      content: '';
-      box-shadow: 20px 0 0 #bbb, 40px 0 0 #bbb, 60px 0 0 #bbb, 80px 0 0 #bbb;
-    }
-  }
-  .main-progression__box-inner {
-    margin-left: 30px;
-  }
-}
-
-@media (min-width: 769px) {
-  .main-form__file-text {
-    width: 96%;
-  }
-  .main-form__button {
-    width: 370px;
+  .main-form__send {
+    margin: 0 15px;
+    width: 100%;
   }
 }
 
@@ -222,13 +224,6 @@
   .main-progression__box-inner {
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-@media (max-width: 576px) and (max-width: 1100px) {
-  .main-progression__box {
-    padding-left: 15px;
-    padding-right: 15px
   }
 }
 
@@ -249,11 +244,28 @@
   .main-progression__box {
     padding: 0 15px;
   }
+  .main-form__track-text {
+    font-size: 2.5vw;
+  }
+  .main-form__track-block {
+
+    &::after {
+      font-size: 2.5vw;
+    }
+    &::before {
+      font-size: 2.5vw;
+    }
+  }
   .main-form__button {
     width: 100%;
   }
+
 }
 
+@media (max-width: 576px){
+  .main-form__track {
+    margin-bottom: 40px;
+  }
 
-
+}
 

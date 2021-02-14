@@ -1,8 +1,8 @@
 window.addEventListener("DOMContentLoaded", function () {
 
     /* BEGIN: Menu toggle */
-    let hamburger = document.querySelector('.nav-menu__toggle');
-    let menu = document.querySelector('.nav-menu');
+    let hamburger = document.querySelector('.menu-toggle');
+    let menu = document.querySelector('.menu');
 
 
     const toggleMenu = function () {
